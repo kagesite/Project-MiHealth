@@ -43,10 +43,10 @@ header {
 }
 
 .nav-links li a {
-  transition: all 0.2s ease;
+  transition: all 0.2s;
 }
 .nav-links li a:hover {
-  color: red;
+  color: rgb(89, 139, 23)
 }
 
 /* ----- HEADER CLOSE ----- */
@@ -109,6 +109,12 @@ main div {
   font-size: 22px;
 }
 
+.breakfast:hover, .lunch:hover, .dinner:hover {
+  transform: translateY(-12px);
+  cursor: pointer;
+  box-shadow: -10px 10px 0px 0px rgb(89, 139, 23);
+}
+
 
 .breakfast {
   position: relative;
@@ -117,6 +123,7 @@ main div {
   background-size: cover;
   font-weight: 700;
   letter-spacing: 1px;
+  transition: 0.2s all;
 }
 
 .top-span {
@@ -151,6 +158,7 @@ main div {
   background-size: cover;
   font-weight: 700;
   letter-spacing: 1px;
+  transition: 0.2s ease;
 }
 
 .dinner {
@@ -160,4 +168,5 @@ main div {
   background-size: cover;
   font-weight: 700;
   letter-spacing: 1px;
+  transition: 0.2s ease;
 }
