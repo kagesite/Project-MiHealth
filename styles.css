@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  --main-blue: rgb(4, 99, 104);
+  --main-red: rgb(193, 34, 58);
+
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  color: rgb(52, 50, 49);
 }
 
 /* ---------- HEADER OPEN ---------- */
@@ -26,11 +33,11 @@ header {
 
 .logo {
   cursor: pointer;
-  color: rgb(135, 211, 35)
+  color: var(--main-red);
 }
 
 .logo span {
-  color: red;
+  color: var(--main-blue);
 }
 
 .nav-links {
@@ -46,7 +53,7 @@ header {
   transition: all 0.2s;
 }
 .nav-links li a:hover {
-  color: rgb(89, 139, 23)
+  color: var(--main-red)
 }
 
 /* ----- HEADER CLOSE ----- */
@@ -58,6 +65,7 @@ header {
 /* ---------- MAIN OPEN ---------- */
 
 main {
+  background-color: var(--main-blue);
   background-image: url(./images/fabric.jpg);
 }
 
@@ -112,7 +120,7 @@ main div {
 .breakfast:hover, .lunch:hover, .dinner:hover {
   transform: translateY(-12px);
   cursor: pointer;
-  box-shadow: -10px 10px 0px 0px rgb(89, 139, 23);
+  box-shadow: -10px 10px 0px 0px var(--main-blue);
 }
 
 .breakfast {
@@ -141,7 +149,8 @@ main div {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: rgb(135, 211, 35);
+  background: var(--main-red);
+  color: white;
   height: 50px;
   width: 50%;
   display: flex;
