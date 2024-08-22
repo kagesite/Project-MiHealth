@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 :root {
   --main-blue: rgb(4, 99, 104);
   --main-red: rgb(193, 34, 58);
+  --main-yellow: rgb(241, 194, 50);
 
 }
 
@@ -11,7 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  color: rgb(52, 50, 49);
+  color: #222222;
 }
 
 /* ---------- HEADER OPEN ---------- */
@@ -29,11 +31,13 @@ header {
   align-items: center;
   height: 10vh;
   padding: 0 10%;
+  background-color: #171717;
 }
 
 .logo {
   cursor: pointer;
-  color: var(--main-red);
+  color: white;
+  letter-spacing: 1.7px;
 }
 
 .logo span {
@@ -50,7 +54,10 @@ header {
 }
 
 .nav-links li a {
+  font-size: 18px;
+  color: white;
   transition: all 0.2s;
+  font-weight: 600;
 }
 .nav-links li a:hover {
   color: var(--main-red)
@@ -72,6 +79,7 @@ main {
 main div {
   height: 60vh;
   min-width: 300px;
+  border-radius: 10px 10px 0 10px;
 }
 
 
@@ -99,7 +107,8 @@ main div {
   font-size: 60px;
   font-weight: 900;
   margin-bottom: 30px;
-  line-height: 48px;
+  line-height: 60px;
+  letter-spacing: 1.2px;
 }
 
 .hero p {
@@ -117,32 +126,47 @@ main div {
   font-size: 22px;
 }
 
-.breakfast:hover, .lunch:hover, .dinner:hover {
-  transform: translateY(-12px);
-  cursor: pointer;
-  box-shadow: -10px 10px 0px 0px var(--main-blue);
-}
-
-.breakfast {
+.breakfast, .lunch, .dinner {
   position: relative;
-  background-image: url(./images/breakfast.jpg);
   background-position: center;
   background-size: cover;
   font-weight: 700;
   letter-spacing: 1px;
   transition: 0.2s all;
+  border: 3px solid #171717;
 }
+
+.breakfast:hover, .lunch:hover, .dinner:hover {
+  transform: translateY(-12px);
+  cursor: pointer;
+  box-shadow: -10px 10px 0px 0px var(--main-blue);
+  border: 3px solid #fff;
+}
+
+.breakfast {
+  background-image: url(./images/breakfast.jpg);
+}
+
+.lunch {
+  background-image: url(./images/lunch.jpg);
+}
+
+.dinner {
+  background-image: url(./images/dinner.jpg);
+}
+
 
 .top-span {
   position: absolute;
   bottom: 50px;
   right: 0;
-  background: white;
+  background: #171717;
   height: 50px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 0 15px;
+  color: white;
 }
 
 .bottom-span {
@@ -157,24 +181,4 @@ main div {
   justify-content: flex-end;
   align-items: center;
   padding: 0 15px 0 0;
-}
-
-.lunch {
-  position: relative;
-  background-image: url(./images/lunch.jpg);
-  background-position: center;
-  background-size: cover;
-  font-weight: 700;
-  letter-spacing: 1px;
-  transition: 0.2s ease;
-}
-
-.dinner {
-  position: relative;
-  background-image: url(./images/dinner.jpg);
-  background-position: center;
-  background-size: cover;
-  font-weight: 700;
-  letter-spacing: 1px;
-  transition: 0.2s ease;
 }
