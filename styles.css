@@ -7,7 +7,9 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-li, a, button {
+/* ---------- HEADER OPEN ---------- */
+
+li, a {
   font-weight: 500;
   font-size: 16px;
   color: black;
@@ -18,11 +20,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  height: 10vh;
+  padding: 0 10%;
 }
 
 .logo {
   cursor: pointer;
+  color: rgb(135, 211, 35)
 }
 
 .logo span {
@@ -39,8 +43,119 @@ header {
 }
 
 .nav-links li a {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .nav-links li a:hover {
   color: red;
+}
+
+/* ----- HEADER CLOSE ----- */
+
+
+
+
+
+/* ---------- MAIN OPEN ---------- */
+
+main {
+  background-color: #ddd;
+}
+
+main div {
+  height: 60vh;
+  min-width: 300px;
+}
+
+
+.container {
+  justify-content: center;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 27% 24% 24% 24%;
+  column-gap: 20px;
+  padding: 70px 50px 0;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+  min-width: 350px;
+  margin-right: 100px;
+}
+
+.hero h3 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  line-height: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.browse {
+  font-weight: 600;
+}
+
+.arrow {
+  margin-left: 20px;
+}
+
+.breakfast {
+  position: relative;
+  background-image: url(./images/breakfast.jpg);
+  background-position: center;
+  background-size: cover;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.top-span {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  background: white;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.bottom-span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgb(135, 211, 35);
+  height: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 15px 0 0;
+}
+
+.lunch {
+  position: relative;
+  background-image: url(./images/lunch.jpg);
+  background-position: center;
+  background-size: cover;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.dinner {
+  position: relative;
+  background-image: url(./images/dinner.jpg);
+  background-position: center;
+  background-size: cover;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
